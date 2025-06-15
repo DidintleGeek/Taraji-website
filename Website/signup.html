@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8">
+     <title> Taraji Furnitures</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body> 
+        <div class="main">
+           <div class="top-bar">
+              <div class="navbar">
+                  <div class="icon">
+                        <div class="logo">
+                            <h1>Taraji Furnitures</h1>
+                        </div>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="http://127.0.0.1:5500/signup.html">Register</a></li> 
+                                    <li><a href="#">Contact</a></li>    
+                                </ul>
+                            </div>
+                    </div>              
+               </div>
+           </div>
+        </div>
+
+        <div class="registration-form">
+            <h2>Registration</h2>
+             <div class="form-group">
+                <input type="text" name="firstname" placeholder="firstname" required>
+                <input type="text" name="lastname" placeholder="lastname" required>
+             </div>
+          
+          <div class="input-field">
+         <input type="email" name="email" placeholder="Email"  required>
+          </div>
+
+          <!-- password -->
+          <div class="input-field">
+            <input type="password" name="password" placeholder="password"  required>
+            <i class='bx bxs-low-vision visibility-toggle' style='color:#5d5d59'></i>
+          </div>
+
+          <!-- confirmation password -->
+         <div class="input-field">
+            <input type="password" name="confirm password" placeholder=" confirm password"  required>
+           <i class='bx bxs-low-vision visibility-toggle' style='color:#5d5d59'></i> <br><br>
+
+          <!-- choose role -->
+           <select name="role"  required>
+            <option value="">--Select Role--</option>
+            <option value="customer">customer</option>
+            <option value="Admin" >Admin</option>
+           </select>
+
+         </div><br>
+            <a href="index.html" class="btn">Create Account</a><br><br>
+             <p>Already have an account? <a href="index.html">Login Here</a></p>
+
+        </div>
+        <script src="main.js"></script>
+   </body>
+<html>
+ 

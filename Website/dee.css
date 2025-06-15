@@ -1,0 +1,157 @@
+/* --- Footer Styles --- */
+.my-footer {
+    background-color: #212529; 
+    color: white; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+
+
+.footer-main-content {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+   
+}
+
+/* Individual Footer Columns */
+.footer-column {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 0 15px; 
+    margin-bottom: 30px; 
+}
+
+/*Logo*/
+.footer-about {
+    flex: 1.5; 
+    min-width: 250px; 
+}
+
+/* Logo and Title within the first column */
+.logo-text-container {
+    display: flex;
+    align-items: center; /* Vertically align logo and title */
+    margin-bottom: 15px; /* Space below the logo/title container */
+}
+
+.footer-logo {
+    width: 55px; 
+    height: 55px;
+    margin-right: 10px; 
+    object-fit: contain; 
+    border-radius: 50%;
+}
+
+.footer-title {
+    color: white;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.footer-about p {
+    color: #cccccc; /* Lighter grey for paragraph text */
+    line-height: 1.6;
+}
+
+/* --- Quick Links / Featured section styles --- */
+.footer-links h5,
+.footer-contact h5{
+    font-size: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
+
+/* --- Contact Us section styles --- */
+.footer-contact div {
+    margin-bottom: 10px;
+}
+
+.footer-contact h6 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.footer-contact p {
+    color: #cccccc;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Responsive Adjustments with Media Queries for Flexbox --- */
+
+/* For screens smaller than 992px (e.g., tablets and smaller desktops) */
+@media (max-width: 991px) {
+    .footer-column {
+        flex-basis: calc(50% - 30px); /* Two columns per row, accounting for gap */
+        max-width: calc(50% - 30px); /* Ensure it doesn't take more than half */
+    }
+    .footer-about {
+        flex-basis: 100%; /* About section takes full width */
+        max-width: 100%;
+        text-align: center; /* Center content */
+    }
+    .logo-text-container {
+        justify-content: center; /* Center logo and text when the column is centered */
+    }
+}
+
+/* For screens smaller than 767px (e.g., mobile phones) */
+@media (max-width: 767px) {
+    .footer-column {
+        flex-basis: 100%; /* Each column takes full width */
+        max-width: 100%;
+        text-align: center; /* Center content */
+    }
+    .logo-text-container,
+    .ig-images-flex {
+        justify-content: center; /* Center their content */
+    }
+
+    .footer-bottom-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally when stacked */
+    }
+    .footer-bottom-content img,
+    .footer-bottom-content p,
+    .social-icons {
+        margin-bottom: 15px; /* Add more space between stacked items */
+    }
+    .social-icons {
+        justify-content: center; /* Center social icons when stacked */
+    }
+}

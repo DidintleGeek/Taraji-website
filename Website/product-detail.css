@@ -1,0 +1,239 @@
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+ }
+
+ html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+ 
+  background-position: center;
+  background-size: cover;
+   height: 109vh;
+  }
+
+/* New full-width top bar */
+.top-navbar {
+  width: 100%;
+  background-color: rgba(193, 193, 193, 0.63);
+  padding: 10px 0;
+}
+
+/* Navbar stays centered */
+.navbar {
+  width: 1200px;
+  height: 55px; 
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.heading {
+  height: 160px;
+  margin-left: 20px;
+}
+
+.heading h1{
+  height: 100px;
+  padding-top: 0;
+  font-size: 26px;
+}
+
+.menu{
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+ul{
+
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+
+ul li{
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  white-space: nowrap;
+}
+
+ul li a:hover{
+  color: rgb(233, 3, 42);
+  text-decoration: underline;
+}
+
+/* Dropdown Menus */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: rgba(193, 193, 193, 0.63);
+  text-decoration: none;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown_menu {
+  display: block;
+}
+
+
+.dropdown_menu ul{
+display: block;
+  margin: 16px;
+}
+
+.dropdown_menu ul li{
+  width: 100px;
+  padding: 1px;
+}
+
+/* The shopping icons */
+
+.header-icon {
+  display: flex;
+  column-gap: 10px; 
+}
+
+.header-icon i {
+ font-size: 28px;
+ color: black;
+ margin-bottom: 50px;
+}
+
+.header-icon i:hover{
+  color: rgb(250, 98, 123);
+  text-decoration: underline;
+  }
+
+/* The search */
+.search{
+  width:400px;
+  float: left;
+  margin-left: 500px; /*do not change this*/
+  top: 15px;
+  position:absolute;
+}
+
+/* The box that says type here */
+.srch{
+  font-family: "poppins", sans-serif;
+  width: 250px;
+  height: 30px;
+  background: whitesmoke;
+  border: 1px solid rgb(169, 169, 169);
+  margin-top: 0.99px;
+  color: black;
+  border-right: none;
+  font-size: 13px;
+  float:left;
+  padding: 10px;  
+  border-radius: 5px;
+}
+
+.srch:focus{
+  outline: none;
+}
+
+.search-btn{
+  width: 150px;
+  height: 30px;
+  margin-top: 0.90px;
+  color: black;
+  background: pink;
+  font-size: 13px;
+  font-family: "poppins", sans-serif;
+  border: 1px solid rgb(169, 169, 169);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-detail-container {
+  display: flex;
+  gap: 40px;
+  background-color: #fff;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+.image-section img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.details-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.product-name {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.spacer {
+  margin: 20px 0;
+}
+
+.buy-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+}
+
+.quantity-control span {
+  padding: 0 10px;
+}
+
+.add-to-cart {
+  background-color: pink;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.heart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}

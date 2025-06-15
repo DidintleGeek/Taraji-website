@@ -1,0 +1,461 @@
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+ }
+
+ html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+ 
+  background-position: center;
+  background-size: cover;
+   height: 109vh;
+  }
+
+/* New full-width top bar */
+.top-navbar {
+  width: 100%;
+  background-color: rgba(193, 193, 193, 0.63);
+  padding: 10px 0;
+}
+
+/* Navbar stays centered */
+.navbar {
+  width: 1200px;
+  height: 55px; 
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.heading {
+  height: 160px;
+  margin-left: 20px;
+}
+
+.heading h1{
+  height: 100px;
+  padding-top: 0;
+  font-size: 26px;
+}
+
+.menu{
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+ul{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+
+ul li{
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  white-space: nowrap;
+}
+
+ul li a:hover{
+  color: rgb(233, 3, 42);
+  text-decoration: underline;
+}
+
+/* Dropdown Menus */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: rgba(193, 193, 193, 0.63);
+  text-decoration: none;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown_menu {
+  display: block;
+}
+
+
+.dropdown_menu ul{
+display: block;
+  margin: 16px;
+}
+
+.dropdown_menu ul li{
+  width: 100px;
+  padding: 1px;
+}
+
+/* The shopping icons */
+
+.header-icon {
+  display: flex;
+  column-gap: 10px; 
+}
+
+.header-icon i {
+ font-size: 28px;
+ color: black;
+ margin-bottom: 50px;
+}
+
+.header-icon i:hover{
+  color: rgb(250, 98, 123);
+  text-decoration: underline;
+  }
+
+/* The search container */
+.search {
+  width: 330px;
+  margin-left: 500px; /* do not change this */
+  position: absolute;
+  top: 15px;
+  float: left;
+  display: flex;            
+  align-items: center;       
+}
+
+/* The box that says type here */
+.srch {
+  font-family: "poppins", sans-serif;
+  width: 1000px;
+  height: 30px;
+  background: whitesmoke;
+  border: 1px solid rgb(169, 169, 169);
+  color: black;
+  font-size: 13px;
+  padding: 5px 10px;  
+  border-radius: 5px;
+  box-sizing: border-box;
+  border-right: none;
+}
+
+.srch:focus {
+  outline: none;
+}
+
+/* The search button */
+.search-btn {
+  width: 400px;
+  height: 30px;
+  color: black;
+  background: pink;
+  font-size: 13px;
+  font-family: "poppins", sans-serif;
+  border: 1px solid rgb(169, 169, 169);
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-btn:hover {
+  border: 1px solid black;
+}
+
+/* The Shop by tables section starts here */
+
+.product-section {
+  padding: 50px 100px;
+  text-align: center;
+}
+
+.product-section h2 {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: black;
+  background: pink;
+  font-size: 25px;
+  font-family: "poppins", sans-serif;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: white;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(148, 148, 148, 0.959);
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.product-rating {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 6px;
+  background-color:pink;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.product-card button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive - 2 columns for tablets */
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive - 1 column for phones */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-detail-container {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.product-detail-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.my-footer {
+  background-color: #212529; 
+  color: white; 
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+}
+
+.footer-main-content {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 15px; 
+   
+}
+
+/* Individual Footer Columns */
+.footer-column {
+  flex: 1; 
+  min-width: 200px; 
+  padding: 0 15px; 
+  margin-bottom: 30px; 
+}
+
+/*Logo*/
+.footer-about {
+  flex: 1.5; 
+  min-width: 250px; 
+}
+
+/* Logo and Title within the first column */
+.logo-text-container {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 15px; 
+}
+
+.footer-logo {
+  width: 55px; 
+  height: 55px;
+  margin-right: 10px; 
+  object-fit: contain; 
+  border-radius: 50%;
+}
+
+.footer-title {
+  color: white;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.footer-about p {
+  color: #cccccc; /* Lighter grey for paragraph text */
+  line-height: 1.6;
+}
+
+/* footer Links */
+.footer-links h6{
+  color: white;
+  text-transform: uppercase;
+   font-size: 0.9em;
+}
+
+.footer-links ul{
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+ display: block;
+ line-height: 1.9;
+ padding: 0;
+  margin: 0;
+}
+
+
+.footer-links ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  font-size: 12px;
+  padding: 0;
+ 
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-contact h5{
+  font-size: 16px;
+}
+
+/* --- Contact Us section styles --- */
+.footer-contact div {
+  margin-bottom: 10px;
+}
+
+.footer-contact h6 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.footer-contact p {
+  color: #cccccc;
+  margin-bottom: 0;
+}
+
+.footer{
+  text-align: center;
+  padding-left: 320px;
+  margin-bottom: 6px;
+  color: #cccccc
+}
+
+
+
+
+@media (max-width: 991px) {
+.footer-column {
+flex-basis: calc(50% - 30px); 
+max-width: calc(50% - 30px); 
+}
+
+.footer-about {
+flex-basis: 100%; 
+max-width: 100%;
+text-align: center; 
+}
+
+.logo-text-container {
+justify-content: center; 
+}
+
+
+/* For screens smaller than 767px (e.g., mobile phones) */
+@media (max-width: 767px){
+
+.footer-column {
+flex-basis: 100%; 
+max-width: 100%;
+text-align: center; 
+}
+
+.logo-text-container,
+.footer-bottom-content {
+flex-direction: column; 
+align-items: center; 
+}
+
+.footer-bottom-content img,
+.footer-bottom-content p,
+.social-icons {
+margin-bottom: 15px; 
+}
+}
+}
