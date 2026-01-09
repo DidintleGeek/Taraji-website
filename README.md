@@ -10,6 +10,6 @@ Admin portal for managing products, orders, and customers.
 
 Business analytics dashboard to track sales, revenue, and customer insights.
 
-Technologies: PHP | MySQL | HTML | CSS | JavaScript
+Technologies: MySQL | HTML | CSS | JavaScript
 
 This project showcases end-to-end web development, including frontend design, backend logic, and database management.
